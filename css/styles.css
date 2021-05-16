@@ -4,7 +4,17 @@ body {
   background-color: white;
   text-align: center;
   min-height: 100vh;
-  background: repeating-linear-gradient(-225deg, #d0d6f6, #d0d6f6 20px, white 20px, white 40px,#fdd1d0 40px, #fdd1d0 60px, white 60px, white 80px);
+  background: repeating-linear-gradient(
+    -225deg,
+    #d0d6f6,
+    #d0d6f6 20px,
+    white 20px,
+    white 40px,
+    #fdd1d0 40px,
+    #fdd1d0 60px,
+    white 60px,
+    white 80px
+  );
 }
 .wrapper {
   max-width: 1020px;
@@ -38,7 +48,7 @@ p {
 .mac {
   height: 700px;
   flex: 1;
-  background: url('../images/mac.png') center top no-repeat;
+  background: url("../images/mac.png") center top no-repeat;
   background-size: contain;
 }
 
@@ -47,12 +57,26 @@ p {
   background: #3f69ff;
   border: none;
   font-size: 2em;
-  padding: .7em 2em;
-  border-radius: .5em;
+  padding: 0.7em 2em;
+  border-radius: 0.5em;
   font-weight: bold;
   cursor: pointer;
 }
 
+.credits {
+  background: white;
+  color: #3f69ff;
+  border: none;
+  font-size: 2em;
+  padding: 0.7em 2em;
+  border-radius: 0.5em;
+}
+
+footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+}
 
 .icrecream-grid {
   display: grid;
@@ -65,7 +89,7 @@ p {
   height: 50px;
 }
 .flavor {
-  transition: .3s;
+  transition: 0.3s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -102,4 +126,3 @@ p {
 [data-flavor="lemon"] {
   background: lime;
 }
-
